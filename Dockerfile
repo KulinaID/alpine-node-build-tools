@@ -6,9 +6,6 @@ ENV TERM=dumb \
     RUNTIME_DEPS="libgcc libstdc++"
 
 RUN apk add --update ${BUILD_DEPS} ${RUNTIME_DEPS} && curl -L https://www.npmjs.org/install.sh | sh && \
-    npm install -g sqwish node-gyp && \
-    mkdir /app && \
-    npm install --prefix /app node-sass phantomjs webpack && \
     apk del ${BUILD_DEPS} && \
     rm -rf /tmp/* /var/cache/apk/*
 
