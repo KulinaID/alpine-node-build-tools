@@ -6,5 +6,7 @@ Docker NodeJS Image based on [Alpine Linux](http://www.alpinelinux.org/).
 ```console
 docker pull kulina/alpine-node-build-tools
 ```
+- v1.0.0 - node 5.9.1
+- v1.1.0 - node 5.10.1
 
 Copyright &copy; 2015. All rights reserved.
